@@ -1,0 +1,346 @@
+/* General Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background: white;
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400; /* Decrease font weight for nav links */
+    font-size: 14px; /* Decrease font size for nav links */
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #4caf50;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 95px; /* Adjusted size */
+    margin-right: 25px;
+    transition: transform 0.3s ease; /* Smooth scaling */
+}
+.logo-image:hover {
+    transform: scale(1.1); /* Scale up the logo */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #f1f2b5, #135058);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin: 0 0 20px 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #3e8e41;
+}
+
+/* Services Section */
+.services {
+    background: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card i {
+    font-size: 2em;
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 60px 20px;
+    background: #f9f9f9;
+}
+.portfolio h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4caf50;
+    font-size: 2.5em;
+}
+
+.portfolio h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4caf50;
+}
+
+.portfolio-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.portfolio-section {
+    position: relative;
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.portfolio-gallery {
+    display: flex;
+    gap: 10px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+.portfolio-item {
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 300px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+    /* Ensure the blur effect is applied to the image */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+
+.portfolio-item:hover img {
+    filter: blur(5px); /* Blur effect on hover */
+}
+
+.portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Hide overlay by default */
+    transition: opacity 0.3s ease; /* Smooth transition for showing the overlay */
+    height: 100%; /* Ensure overlay covers the full height */
+    width: 100%; /* Ensure overlay covers the full width */
+    display: flex; /* Center the text horizontally and vertically */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background: #e6f7f4;
+}
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.architects-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.architect-profile {
+    flex: 1;
+    text-align: center;
+}
+
+.architect-photo img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.about-us-description {
+    margin-top: 20px;
+}
+
+.additional-links {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.additional-link {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    max-width: 250px;
+    margin: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-decoration: none;
+    color: #333;
+}
+
+.additional-link h3 {
+    margin-bottom: 10px;
+}
+
+.additional-link p {
+    margin: 0;
+}
+
+.additional-link:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #4caf50;
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 20px;
+    background: #4caf50;
+    text-align: center;
+}
+
+.social-media-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.social-media-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sociable img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    transition: transform 0.3s; /* Add transition for smooth scaling */
+}
+
+.sociable:hover img {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+.content {
+    text-align: center;
+}
+
+.content p {
+    margin: 0;
+    padding-top: 10px;
+    color: white;
+}
+
+.content a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.content a:hover {
+    color: #dff0d8;
+}
+
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
