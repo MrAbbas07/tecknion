@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started | Tecknion</title>
+    <link rel="stylesheet" href="getstarted.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body id="home">
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo-link">
+                <img src="tecknion.png" alt="Tecknion Logo" class="logo-image">
+                <img src="slicktech.png" alt="Slicktech Logo" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Get Started Section -->
+    <section class="get-started">
+        <div class="get-started-container">
+            <h1>Get Started with Us</h1>
+            <form action="/submit-form" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="services">Select Services:</label>
+                    <select id="services" name="services">
+                        <option value="architectural">Architectural Design</option>
+                        <option value="urban">Urban Planning</option>
+                        <option value="interior">Interior Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Preferred Contact Method:</label>
+                    <label><input type="radio" name="contact-method" value="email" checked>Email</label>
+                    <label><input type="radio" name="contact-method" value="phone">Phone</label>
+                </div>
+                <div class="form-group">
+                    <label><input type="checkbox" name="newsletter" value="subscribe"> Subscribe to Newsletter</label>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Tecknion Architects,<br/>Plot No. 37B, Journalists Colony, Jubilee Hills, Film Nagar, Hyderabad, Telangana 500033.<br/> All rights reserved.</p>
+    </footer>
+</body>
+</html>
